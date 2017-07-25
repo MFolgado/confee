@@ -167,15 +167,20 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        Migrator\MigrationServiceProvider::class,
+
+        /**
+         * Domains Service Providers...
+         *
+         */
+
+        Confee\Domains\Users\Providers\DomainServiceProvider::class,
 
         /*
-         * Application Service Providers...
+         * Units Service Providers...
          */
-        Confee\Providers\AppServiceProvider::class,
-        Confee\Providers\AuthServiceProvider::class,
-        // Confee\Providers\BroadcastServiceProvider::class,
-        Confee\Providers\EventServiceProvider::class,
-        Confee\Providers\RouteServiceProvider::class,
+
+        Confee\Units\Authentication\Providers\UnitServiceProvider::class,
 
     ],
 

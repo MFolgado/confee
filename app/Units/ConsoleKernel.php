@@ -1,11 +1,11 @@
 <?php
 
-namespace Confee\Console;
+namespace Confee\Units;
 
 use Illuminate\Console\Scheduling\Schedule;
-use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Illuminate\Foundation\Console\Kernel ;
 
-class Kernel extends ConsoleKernel
+class ConsoleKernel extends Kernel
 {
     /**
      * The Artisan commands provided by your application.
@@ -33,8 +33,8 @@ class Kernel extends ConsoleKernel
      *
      * @return void
      */
-    protected function commands()
-    {
-        require base_path('routes/console.php');
-    }
+//    protected function commands()
+//    {
+//        require base_path('routes/console.php');
+//    }
 }
